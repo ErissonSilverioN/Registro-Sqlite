@@ -24,5 +24,10 @@ namespace RegistroConSqlite
         {
             InitializeComponent();
         }
+
+        private void nombreTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
