@@ -5,18 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RegistroConSqlite"
         mc:Ignorable="d"
-        Title="MainWindow" Height="300" Width="500">
+        Title="MainWindow" Height="360" Width="500">
     <Grid>
-        <Label Content="PersonaId" HorizontalAlignment="Left" Margin="25,40,0,0" VerticalAlignment="Top"/>
-        <Label Content="Nombre" HorizontalAlignment="Left" Margin="24,111,0,0" VerticalAlignment="Top"/>
-        <Label Content="Fecha" HorizontalAlignment="Left" Margin="312,44,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="idTextBox" TextWrapping="Wrap" Margin="94,44,344,221"/>
-        <TextBox x:Name="nombreTextBox" HorizontalAlignment="Left" Margin="93,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="352" TextChanged="nombreTextBox_TextChanged"/>
-        <DatePicker x:Name="fechaDatePicker" HorizontalAlignment="Left" Margin="356,46,0,0" VerticalAlignment="Top" Width="91"/>
-        <Button x:Name="buscarButton" Content="Buscar" HorizontalAlignment="Left" Margin="173,33,0,0" VerticalAlignment="Top" Height="43" Width="108"/>
-        <Button x:Name="nuevoButton" Content="Nuevo" HorizontalAlignment="Left" Margin="24,191,0,0" VerticalAlignment="Top" Height="57" Width="124"/>
-        <Button x:Name="guardarButton" Content="Guardar" HorizontalAlignment="Center" Margin="0,191,0,0" VerticalAlignment="Top" Height="54" Width="114"/>
-        <Button x:Name="eliminarButton" Content="Eliminar" HorizontalAlignment="Left" Margin="339,193,0,0" VerticalAlignment="Top" Height="55" Width="127" RenderTransformOrigin="0.5,0.5">
+        <Label Content="PersonaId" HorizontalAlignment="Left" Margin="21,40,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="24,121,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Fecha" HorizontalAlignment="Left" Margin="324,41,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="nombreTextBox" HorizontalAlignment="Left" Margin="108,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="352" PreviewTextInput="nombreTextBox_PreviewTextInput"/>
+        <DatePicker x:Name="fechaDatePicker" HorizontalAlignment="Left" Margin="383,45,0,0" VerticalAlignment="Top" Width="91"/>
+        <Button x:Name="buscarButton" Content="Buscar" HorizontalAlignment="Left" Margin="218,35,0,0" VerticalAlignment="Top" Height="39" Width="84" Click="buscarButton_Click" FontWeight="Bold"/>
+        <Button x:Name="nuevoButton" Content="Nuevo" HorizontalAlignment="Left" Margin="18,216,0,0" VerticalAlignment="Top" Height="56" Width="124" Click="nuevoButton_Click" FontWeight="Bold"/>
+        <Button x:Name="guardarButton" Content="Guardar" HorizontalAlignment="Left" Margin="178,217,0,0" VerticalAlignment="Top" Height="54" Width="126" Click="guardarButton_Click" FontWeight="Bold"/>
+        <Button x:Name="eliminarButton" Content="Eliminar" HorizontalAlignment="Left" Margin="341,217,0,0" VerticalAlignment="Top" Height="54" Width="127" RenderTransformOrigin="0.5,0.5" Click="eliminarButton_Click" FontWeight="Bold">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -26,6 +25,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
+        <TextBox x:Name="idTextBox1" HorizontalAlignment="Left" Margin="104,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94" PreviewTextInput="idTextBox1_PreviewTextInput"/>
 
     </Grid>
 </Window>
